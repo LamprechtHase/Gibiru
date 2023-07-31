@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Gibiru dark theme
 @namespace https://github.com/LamprechtHase
-@version 0.0.03
+@version 0.0.04
 @description dark mode for Gibiru
 @author Lamprecht Hase
 @homepageURL https://github.com/LamprechtHase/Gibiru
@@ -37,7 +37,10 @@
 		color: #fff !important;
 		color: /*[[primary-text-color]]*/ !important;
 	}
-	a, .gsc-cursor-page, a.gs-title
+	a,
+	.gsc-cursor-page,
+	a.gs-title,
+	.gs-webResult.gs-result a.gs-title:link
 	{
 		background-color: transparent !important;
 		color: #ffbb00 !important;
@@ -48,7 +51,8 @@
 		color: #0000ff !important;
 		color: /*[[hyperlink-color-visited]]*/ !important;
 	}
-	a b
+	a b,
+	.gs-webResult.gs-result a.gs-title:link b
 	{
 		color: #ff00cb !important;
 		color: /*[[primary-highlight-color]]*/ !important;
