@@ -1,0 +1,73 @@
+/* ==UserStyle==
+@name Gibiru dark theme
+@namespace https://github.com/LamprechtHase
+@version 0.0.01
+@description dark mode for Discogs
+@author Lamprecht Hase
+@homepageURL https://github.com/LamprechtHase/Gibiru
+@supportURL https://github.com/LamprechtHase/Gibiru/issues
+@license CC0-1.0
+@advanced color primary-background-color "Primary background color" #222
+@advanced color primary-text-color "Primary text color" #fff
+@advanced color hyperlink-color "Hyperlink color" #ffbb00
+@advanced color hyperlink-color-visited "Hyperlink color visited" #0000ff
+@advanced color primary-highlight-color "Primary highlight color" #ff00cb
+@advanced color secondary-highlight-color "Secondary highlight color" #00ff00
+@advanced color tertiary-highlight-color "Tertiary highlight color" #ff0000
+==/UserStyle== */
+@-moz-document domain("gibiru.com")
+{
+	html,
+	body,
+	div[class*='result']
+	{
+		background-color: #222 !important;
+		background-color: /*[[primary-background-color]]*/ !important;
+		color: #fff !important;
+		color: /*[[primary-text-color]]*/ !important;
+	}
+	p,
+	div[class*='snippet'],
+	div[class*='refinement'],
+	.gsc-cursor-page.gsc-cursor-current-page,
+	.label,
+	a.pagination-link.is-current
+	{
+		background-color: transparent !important;
+		color: #fff !important;
+		color: /*[[primary-text-color]]*/ !important;
+	}
+	a, .gsc-cursor-page
+	{
+		background-color: transparent !important;
+		color: #ffbb00 !important;
+		color: /*[[hyperlink-color]]*/ !important;
+	}
+	a:visited
+	{
+		color: #0000ff !important;
+		color: /*[[hyperlink-color-visited]]*/ !important;
+	}
+	a b
+	{
+		color: #ff00cb !important;
+		color: /*[[primary-highlight-color]]*/ !important;
+	}
+	.gs-webResult, .gs-visibleUrl
+	{
+		color: #00ff00 !important;
+		color: /*[[secondary-highlight-color]]*/ !important;
+	}
+	.result-tab--active, .gsc-refinementhActive > span
+	{
+		border-color: #00ff00 !important;
+		color: /*[[secondary-highlight-color]]*/ !important;
+	}
+	.gs-fileFormatType
+	{
+		color: #ff0000 !important;
+		color: /*[[tertiary-highlight-color]]*/ !important;
+	}
+	.gsc-refinementHeader, .gsc-refinementhActive { border-color: transparent !important; }
+	.input-group { border: 1px solid #aaa !important; }
+} 
