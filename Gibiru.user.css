@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name Gibiru dark theme
 @namespace https://github.com/LamprechtHase
-@version 0.0.01
-@description dark mode for Discogs
+@version 0.0.02
+@description dark mode for Gibiru
 @author Lamprecht Hase
 @homepageURL https://github.com/LamprechtHase/Gibiru
 @supportURL https://github.com/LamprechtHase/Gibiru/issues
@@ -37,7 +37,7 @@
 		color: #fff !important;
 		color: /*[[primary-text-color]]*/ !important;
 	}
-	a, .gsc-cursor-page
+	a, .gsc-cursor-page, .gs-title
 	{
 		background-color: transparent !important;
 		color: #ffbb00 !important;
@@ -70,4 +70,4 @@
 	}
 	.gsc-refinementHeader, .gsc-refinementhActive { border-color: transparent !important; }
 	.input-group { border: 1px solid #aaa !important; }
-} 
+}
