@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Gibiru dark theme
 @namespace https://github.com/LamprechtHase
-@version 0.0.04
+@version 0.0.05
 @description dark mode for Gibiru
 @author Lamprecht Hase
 @homepageURL https://github.com/LamprechtHase/Gibiru
@@ -57,12 +57,14 @@
 		color: #ff00cb !important;
 		color: /*[[primary-highlight-color]]*/ !important;
 	}
-	.gs-webResult, .gs-visibleUrl
+	.gs-webResult,
+	.gs-visibleUrl
 	{
 		color: #00ff00 !important;
 		color: /*[[secondary-highlight-color]]*/ !important;
 	}
-	.result-tab--active, .gsc-refinementhActive > span
+	.result-tab--active,
+	.gsc-refinementhActive > span
 	{
 		border-color: #00ff00 !important;
 		color: /*[[secondary-highlight-color]]*/ !important;
@@ -71,6 +73,10 @@
 	{
 		color: #ff0000 !important;
 		color: /*[[tertiary-highlight-color]]*/ !important;
+	}
+	.gs-spelling
+	{
+		color: #ccc !important;
 	}
 	.gsc-refinementHeader, .gsc-refinementhActive { border-color: transparent !important; }
 	.input-group { border: 1px solid #aaa !important; }
