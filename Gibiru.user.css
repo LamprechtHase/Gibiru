@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Gibiru dark theme
 @namespace https://github.com/LamprechtHase
-@version 0.0.05
+@version 0.0.6
 @description dark mode for Gibiru
 @author Lamprecht Hase
 @homepageURL https://github.com/LamprechtHase/Gibiru
@@ -10,7 +10,7 @@
 @advanced color primary-background-color "Primary background color" #222
 @advanced color primary-text-color "Primary text color" #fff
 @advanced color hyperlink-color "Hyperlink color" #ffbb00
-@advanced color hyperlink-color-visited "Hyperlink color visited" #0000ff
+@advanced color hyperlink-color-visited "Hyperlink color visited" #9900ff
 @advanced color primary-highlight-color "Primary highlight color" #ff00cb
 @advanced color secondary-highlight-color "Secondary highlight color" #00ff00
 @advanced color tertiary-highlight-color "Tertiary highlight color" #ff0000
@@ -26,6 +26,7 @@
 		color: #fff !important;
 		color: /*[[primary-text-color]]*/ !important;
 	}
+	nav#mainNav { background-color: #666 !important; }
 	p,
 	div[class*='snippet'],
 	div[class*='refinement'],
@@ -48,7 +49,7 @@
 	}
 	a:visited
 	{
-		color: #0000ff !important;
+		color: #9900ff !important;
 		color: /*[[hyperlink-color-visited]]*/ !important;
 	}
 	a b,
